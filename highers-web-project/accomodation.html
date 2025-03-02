@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travelers.ltd</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Accomodation.css">
+    <link rel="javascript" href="app.js">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=43663&format=png&color=000000">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <Nav class="universal">
+    <ul class="sidebar">
+        <li  onclick="hidesidebar"><a href="#" ></a><i class="bi bi-menu-down"></i></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./destination.html">Destintion</a></li>
+        <li><a href="accomodation.html">Accomodation</a></li>
+        <li><a href="Travel-guides.html">Travel guides</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="More.html">More</a></li>
+    </ul>
+    <ul class="navigation">
+        <li><a href="https://support.google.com/"><i class="bi bi-person-raised-hand"><br></i>Help</a></li>
+        <li><a href="https://www.google.com/maps/search/top+class+hotels+in+the+world+images/@-1.2557639,36.7852155,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"><i class="bi bi-geo-alt"><br></i>Location</a></li>
+        <li>Feedback</li>
+        <li onclick=showSidebar()><a href="#">
+
+            <i class="bi bi-menu-button-wide-fill"></i></a></li>
+        
+    </ul>
+    </Nav>
+
+    <section id="accommodations">
+    <h1>Accomodation</h1>
+    <div><h2>Paradise Resort Accomodation</h2></div>
+    <p>Welcome to paradise resort, you ideal getaway destionation nestled in the heart of the scenic coastlilne.Whether you're here for relaxing vacation, a romantic escape, or a pamily adventure re offer a variety of luxurious accommodations that cater to every need.Explore our our options and book your stay today!</p>
+
+    <h3>Accommodation Options</h3>
+    <div class="Accommodation_options">
+       <div class="accomodation-img"><img src="./images/plesure.jpg" alt="Private rooms jus for you." width="600" height="560"></div>
+       <div class="overlay-test">
+
+       <h4>Oceanfront Rooms</h4>
+       <p>Wake up to the sound of waves and enjoy stunning panoramic views of the beach from your room's private balcony.</p>
+    </div>
+    </div>
+    </div>
+        
+        <div class="Accommodation_options">
+            <div class="accomodation-img">
+                <img src="./images/cozzy.jpg" alt="Jacuzzy"width="400" height="400">
+           
+        
+
+
+        <h4>Honeymoons.</h4>
+        <p><strong>Capacity:</strong> 2 adults</p>
+        <p><strong>Amenities:</strong>King-size bed, free Wi-Fi, flat-screen TV, air conditioning, mini-fridge, safe, and coffee maker.</p>
+    </div>
+    </div>
+        <p><strong>Special Features:</strong>Private balcony with ocean view.</p>
+        <p><strong>Prices:</strong></p>
+        <p><strong></strong>From $150 per night</p>
+    </div>
+
+    <div class="Accommodation_option">
+        <div class="accomodation-img"><img src="./images/ridge.jpg" alt="Deluxr suit" width="270" height="200" >
+            <div class="overlay-test">
+
+            <h4>Deluxe Suites</h4>
+        
+        <p><strong>Capacity:</strong> 4 adults</p>
+
+        <p><strong>Amenities:</strong> Two queen-sized beds, kitchenette, sofa bed, free Wi-Fi, large flat-screen TV, bathtub, and rain shower.</p>
+    </div>
+    </div>
+
+        <p><strong>Special Features:</strong> Living area, private balcony, and upgraded amenities.</p>
+
+        <p><strong>Price:</strong> From $250 per night</p>
+    </div>
+
+    <h3>Book Your Stay</h3>
+
+    <p>Booking your dream vacation is easy! Select your preferred accommodation, check availability, and secure your reservation.</p>
+
+    <p><strong>Check Availability:</strong> [Insert Calendar Tool]</p>
+
+    <p><strong>Book Now:</strong> [Insert Booking Form Link]</p>
+
+
+    <h3>Location & Nearby Attractions</h3>
+
+    <p>Our resort is perfectly situated to explore everything the area has to offer. Just a short walk to the local town center, you'll find restaurants, shops, and cultural attractions.</p>
+
+    <ul>
+
+        <li>Paradise Beach: 5-minute walk from the resort.</li>
+
+        <li>Sunset Pier: 10-minute drive, perfect for evening views.</li>
+
+        <li>Mountain Hiking Trails: 15-minute drive, explore scenic trails.</li>
+
+    </ul>
+
+
+    <h3>Guest Reviews</h3>
+
+    <div class="review">
+
+        <p><strong>"A Truly Amazing Stay!"</strong><br>⭐⭐⭐⭐⭐  John & Sarah</p>
+
+        <p>"We had a fantastic time at Paradise Resort. The staff was incredibly friendly, and our Oceanfront Room was absolutely beautiful with breathtaking views of the beach. Highly recommend it!"</p>
+
+    </div>
+
+    <div class="review">
+
+        <p><strong>"Perfect for Families!"</strong><br>⭐⭐⭐⭐⭐ Emily T.</p>
+
+        <p>"Our family stayed in the Family Villa, and it was perfect. We loved the private pool and the kids had a blast! The resorts location made it easy to visit all the nearby attractions. Well definitely return!"</p>
+
+    </div>
+</section>
+    <footer>
+    <Ul>
+        <li><a href="/">FAQs</a></li>
+        <li><a href="/">CONTACT US</a></li>
+        <li><a href="/">ABOUT US</a></li>
+        <li><a href="/"> PRIVATE POLICIES</a></li>
+    </Ul>
+</footer>
+<script>
+    function showSidebar(){
+        const sidebar=document.queryselector('.sidebar')
+        stylebar.style.display ='flex'
+    }
+    function hidesidebar(){
+        const sidebar =document.querySelector('.sidebar')
+        sidebar.style.display ='none'
+    }
+    </script>
+</body>
+</html>

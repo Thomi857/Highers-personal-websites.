@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Keep the same background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content */
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Title and Text Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    color: #555;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-card h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    font-size: 1rem;
+    color: #007bff;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #10102e;
+    color: #8bd3d3;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 8px 8px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #8bd3d3;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 15px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-card {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}

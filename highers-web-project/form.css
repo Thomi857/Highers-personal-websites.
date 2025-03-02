@@ -1,0 +1,119 @@
+#steal{
+    margin-right: 50px;
+}
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    width: 250px;
+    z-index:999;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: -10px 0 10px  rgb(0, 0, 0 0.1);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type:none;
+}
+.sidebar li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.sidebar a{
+    width: 100%;
+
+}
+.sidebar i{
+
+    padding:  0 10px;
+    width: 100%;
+    color: rgb(15, 95, 15);
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+sidebar li:hover{
+    background-color: #afabab;
+    padding: 10px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0;
+}
+.navigation li {
+    list-style-type: left;
+    backdrop-filter: blur(30px);
+    display: flex;
+    padding: 0 6px; /* Add some padding to the list items *//* Light background for the items */
+    border-radius: 7px; /* Rounded corners for each item */
+    text-align: left;
+    align-items: center; /* Center the text inside each item */
+    margin: 10px 50px;
+}
+
+.navigation li:hover {
+    background-color: #afabab; /* Darken background color on hover */
+    padding: auto;
+}
+
+/* Optional: If you're using icons (e.g., the menu icon), you can style it as well */
+.navigation li i {
+    font-size: 20px; /* Adjust the size of the icon */
+    padding: 0 10px;
+    vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+
+.titans {
+
+    margin: auto; /* Margin around the table */
+     display:flex;
+     justify-content: center;
+     align-items:center;
+    border-collapse: collapse; /* Collapse borders */
+    background-color: rgb(167, 121, 89);
+    height: 100vh;
+    width: 900px; /* Full width */
+
+}
+table{
+    width: 100%;
+    backdrop-filter: blur 20px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.titans th, .titans td {
+    padding: 20px;
+    border: 1px solid #140404; 
+
+    padding: 20px; /* Padding inside cells */
+    border-radius: 8px;
+    list-style-type:none;
+
+    text-align: center; /* Left align text */
+    list-style-type: none;
+
+}
+
+
+.titans th {
+
+    background-color: #444; /* Dark background for header */
+
+    color: white; /* White text for header */
+    text-align: center;
+
+}
+.titans td{
+    background-color: #eccccc;
+}
